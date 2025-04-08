@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: linear-gradient(to right, #007BFF, #4dabf7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-text {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+}
+
+.header-text p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.contact a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.contact a:hover::after {
+    content: attr(href);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    color: #007BFF;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile {
+        margin-bottom: 20px;
+    }
+    .header-text {
+        text-align: center;
+    }
+}
+
+#about {
+    background: #F5F5F5;
+    padding: 40px;
+    border-left: 5px solid #007BFF;
+}
+
+#skills {
+    padding: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    border-left: 5px solid #28A745;
+}
+
+.skill-card h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#education {
+    padding: 40px;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #007BFF;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007BFF;
+}
+
+.timeline-content {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.collapsible {
+    background: #007BFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+#achievements {
+    padding: 40px;
+}
+
+#achievements ul {
+    list-style: none;
+}
+
+#achievements li {
+    margin: 10px 0;
+    color: #28A745;
+    font-weight: bold;
+}
+
+#achievements li::before {
+    content: '\f091'; /* Font Awesome trophy icon */
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 10px;
+}
+
+#projects {
+    padding: 40px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="50" font-size="50" fill="#007BFF">01</text></svg>') repeat;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #007BFF;
+}
+
+.project-card button {
+    background: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project-card button:hover {
+    background: #28A745;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+#references {
+    padding: 40px;
+}
+
+.reference-list {
+    list-style: none;
+}
+
+.reference-item {
+    margin: 20px 0;
+    position: relative;
+}
+
+.reference-item:hover .tooltip {
+    display: block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007BFF;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+#cta {
+    text-align: center;
+    padding: 40px;
+}
+
+#cta button {
+    background: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#cta button:hover {
+    background: #28A745;
+}
+
+footer {
+    background: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer a {
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #28A745;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344ISBN:181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    background-size: cover;
+    animation: wave 10s infinite linear;
+}
+
+@keyframes wave {
+    0% { background-position: 0 0; }
+    100% { background-position: 1440px 0; }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
