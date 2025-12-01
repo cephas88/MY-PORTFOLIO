@@ -3,176 +3,594 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cephas Nyamai Mutisya - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cephas Nyamai Mutisya - Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture">
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-bracket">&lt;</span>CM<span class="brand-bracket">/&gt;</span>
         </div>
-        <div class="header-text">
-            <h1>Cephas Nyamai Mutisya</h1>
-            <p>Computer Science Graduate | Innovator in Technology Solutions</p>
-            <div class="contact">
-                <p><i class="fas fa-phone"></i> +254 707 188 251</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:cephasmutisya02@gmail.com">cephasmutisya02@gmail.com</a></p>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="line"></span>
+                    <span>Hello, I'm</span>
+                </div>
+                <h1 class="glitch" data-text="Cephas Nyamai">Cephas Nyamai</h1>
+                <h2 class="typing-text">
+                    <span class="static-text">I build </span>
+                    <span class="dynamic-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">Computer Science Graduate passionate about crafting innovative technology solutions and transforming ideas into impactful digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="mailto:cephasmutisya02@gmail.com" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <img src="profile.jpg" alt="Cephas Nyamai Mutisya">
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="fade-in">
-        <h2>About Me</h2>
-        <p>I am a dedicated Computer Science graduate from Gretsa University, where I earned a Bachelor of Science degree with Second Class Honors Upper Division in December 2024. With a strong foundation in algorithms, systems, artificial intelligence, databases, and programming, I am passionate about leveraging technology to solve real-world challenges. My experience includes a high-scoring industrial attachment and leadership as an ICT Prefect, complemented by a proven ability to debug code, analyze problems, and collaborate effectively. I am eager to contribute my skills to innovative projects and am committed to continuous learning in the ever-evolving tech landscape.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3><i class="fas fa-code"></i> Technical Skills</h3>
-                <ul>
-                    <li>Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Databases</li>
-                    <li>Operating Systems</li>
-                </ul>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2>About Me</h2>
+                <div class="section-line"></div>
             </div>
-            <div class="skill-card">
-                <h3><i class="fas fa-comments"></i> Communication Skills</h3>
-                <ul>
-                    <li>Documenting Code and Projects</li>
-                    <li>Explaining Technical Concepts</li>
-                    <li>Collaborative Software Development</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3><i class="fas fa-tools"></i> Problem Solving</h3>
-                <ul>
-                    <li>Debugging Code</li>
-                    <li>Analyzing Problems</li>
-                    <li>Developing Solutions</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3><i class="fas fa-graduation-cap"></i> Lifelong Learning</h3>
-                <ul>
-                    <li>Adaptability</li>
-                    <li>Consistent Upskilling</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3><i class="fas fa-calculator"></i> Math and Logic</h3>
-                <ul>
-                    <li>Mathematical Skills</li>
-                    <li>Symbolic Logic</li>
-                    <li>Quantitative Reasoning</li>
-                </ul>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Who I Am</h3>
+                    <p>A dedicated Computer Science graduate from <strong>Gretsa University</strong> with a <strong>Second Class Honors Upper Division</strong> degree. I'm passionate about leveraging technology to solve real-world challenges and create meaningful impact.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>What I Do</h3>
+                    <p>I specialize in building robust software solutions, from Chrome extensions to full-stack web platforms. I also offer freelancing services in both <strong>technical and non-technical subjects</strong>, helping students and professionals with assignments, projects, and research work.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>My Mission</h3>
+                    <p>To continuously evolve as a developer while contributing innovative solutions to challenging problems. I believe in delivering quality work that exceeds expectations and makes a real difference.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p>Gretsa University, Thika, Kiambu County, Kenya</p>
-                    <p>September 2021 - December 2024</p>
-                    <p>Second Class Honors Upper Division</p>
-                    <p>Cumulative Mean Score: 62.64% (B Grade)</p>
-                    <button class="collapsible">Notable Courses</button>
-                    <div class="content">
-                        <ul>
-                            <li>Computing Research Methods (77%, A)</li>
-                            <li>Critical Thinking and Logic (80%, A)</li>
-                            <li>Practical III - Networking (73%, A)</li>
-                            <li>Industrial Attachment (72%, A)</li>
-                        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2>Experience & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card glass-card">
+                    <div class="exp-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Freelance Developer & Academic Writer</h3>
+                    <span class="exp-date">2021 - Present</span>
+                    <ul>
+                        <li>Developed and published a Bidding Bot on Chrome Web Store</li>
+                        <li>Built a complete Freelancing Platform from scratch</li>
+                        <li>Completed numerous programming assignments and projects for clients</li>
+                        <li>Provided academic writing services across various subjects</li>
+                        <li>Delivered high-quality work with quick turnaround times</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass-card">
+                    <div class="exp-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Industrial Attachment</h3>
+                    <span class="exp-date">2024</span>
+                    <ul>
+                        <li>Gained hands-on experience in networking and systems administration</li>
+                        <li>Worked with professional teams on real-world IT solutions</li>
+                        <li>Applied theoretical knowledge to practical scenarios</li>
+                        <li>Achieved Grade A (72%) for exceptional performance</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass-card">
+                    <div class="exp-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>ICT Prefect</h3>
+                    <span class="exp-date">2019 - 2020</span>
+                    <ul>
+                        <li>Led technology initiatives at Nguumo Boys High School</li>
+                        <li>Managed computer laboratory and IT resources</li>
+                        <li>Assisted fellow students with technical issues</li>
+                        <li>Organized and conducted ICT-related activities</li>
+                    </ul>
+                </div>
+                <div class="experience-card glass-card">
+                    <div class="exp-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research Experience</h3>
+                    <span class="exp-date">2023 - 2024</span>
+                    <ul>
+                        <li>Conducted in-depth computing research projects</li>
+                        <li>Research Project I - Achieved Grade A (81%)</li>
+                        <li>Research Project II - Achieved Grade B (69%)</li>
+                        <li>Developed strong analytical and documentation skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2>My Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid-simple">
+                <!-- Technical Skills -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Programming (Python, JavaScript, Java)</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Database Management (SQL, MySQL)</li>
+                        <li>Operating Systems</li>
+                        <li>Web Development (HTML, CSS, JS)</li>
+                        <li>Chrome Extension Development</li>
+                        <li>API Integration & Development</li>
+                        <li>Version Control (Git)</li>
+                        <li>Networking & Systems</li>
+                        <li>Artificial Intelligence & Machine Learning</li>
+                    </ul>
+                </div>
+
+                <!-- Freelancing - Technical Subjects -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Freelancing - Technical Subjects</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Computer Science Assignments</li>
+                        <li>Programming Projects (Python, Java, C++)</li>
+                        <li>Database Design & SQL Queries</li>
+                        <li>Data Structures & Algorithms Help</li>
+                        <li>Web Development Projects</li>
+                        <li>Software Documentation</li>
+                        <li>Code Debugging & Review</li>
+                        <li>Technical Report Writing</li>
+                        <li>Research Paper Assistance</li>
+                        <li>Mathematics & Statistics</li>
+                    </ul>
+                </div>
+
+                <!-- Freelancing - Non-Technical Subjects -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>Freelancing - Non-Technical Subjects</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Academic Writing & Essays</li>
+                        <li>Research & Analysis</li>
+                        <li>Business Writing</li>
+                        <li>Content Writing</li>
+                        <li>Report Writing</li>
+                        <li>Proofreading & Editing</li>
+                        <li>Literature Reviews</li>
+                        <li>Case Study Analysis</li>
+                        <li>Presentations & PowerPoints</li>
+                        <li>General Academic Assistance</li>
+                    </ul>
+                </div>
+
+                <!-- Problem Solving -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Debugging & Code Analysis</li>
+                        <li>Critical Thinking & Logic</li>
+                        <li>Solution Architecture</li>
+                        <li>Analytical Reasoning</li>
+                        <li>Quantitative Analysis</li>
+                        <li>Mathematical Problem Solving</li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Technical Communication</li>
+                        <li>Team Collaboration</li>
+                        <li>Project Management</li>
+                        <li>Time Management</li>
+                        <li>Adaptability & Quick Learning</li>
+                        <li>Client Communication</li>
+                        <li>Documentation & Reporting</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-box glass-card">
+                    <div class="skill-box-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>VS Code & IDEs</li>
+                        <li>Git & GitHub</li>
+                        <li>Linux/Ubuntu</li>
+                        <li>MySQL & Databases</li>
+                        <li>Chrome DevTools</li>
+                        <li>Microsoft Office Suite</li>
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2>Academic Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">
+                            <span>2021 - 2024</span>
+                        </div>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <h4>Gretsa University, Thika, Kenya</h4>
+                        <div class="achievement-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Second Class Honors Upper Division</span>
+                        </div>
+                        <p>Cumulative Mean Score: <strong>62.64% (B Grade)</strong></p>
+                        <div class="notable-courses">
+                            <h5><i class="fas fa-star"></i> Notable Achievements</h5>
+                            <ul>
+                                <li><span class="course">Computing Research Methods</span><span class="grade">77% (A)</span></li>
+                                <li><span class="course">Critical Thinking and Logic</span><span class="grade">80% (A)</span></li>
+                                <li><span class="course">Practical III - Networking</span><span class="grade">73% (A)</span></li>
+                                <li><span class="course">Industrial Attachment</span><span class="grade">72% (A)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">
+                            <span>2017 - 2021</span>
+                        </div>
+                        <h3>High School Education</h3>
+                        <h4>Nguumo Boys High School, Kenya</h4>
+                        <p>Mean Grade: <strong>B-</strong></p>
+                        <div class="highlight-tag">
+                            <i class="fas fa-medal"></i>
+                            <span>ICT Prefect 2019-2020</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>High School</h3>
-                    <p>Nguumo Boys High School, Kenya</p>
-                    <p>January 2017 - March 2021</p>
-                    <p>Mean Grade: B-</p>
-                </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;achievements&gt;</span>
+                <h2>Milestones</h2>
+                <div class="section-line"></div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Primary School</h3>
-                    <p>Nguumo Primary School, Kenya</p>
-                    <p>January 2009 - November 2016</p>
-                    <p>Final Marks: 278</p>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Mathematics Champion</h3>
+                    <p>Second Best in Mathematics Contest at Mukameni Secondary School, 2017</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>ICT Prefect</h3>
+                    <p>Led technology initiatives at Nguumo Boys High School, 2019-2020</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Complete CS Packages</h3>
+                    <p>Completed all Computer Science application packages at Nguumo Boys, 2021</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Honors Graduate</h3>
+                    <p>Graduated with Second Class Honors Upper Division from Gretsa University, 2024</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="achievements" class="fade-in">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Second Best in Mathematics Contest - Mukameni Secondary School, 2017</li>
-            <li>Mathematics Contest Participant - Kalulini Boys High School, 2018</li>
-            <li>ICT Prefect - Nguumo Boys High School, 2019-2020</li>
-            <li>Completion of All Computer Science Application Packages - Nguumo Boys High School, 2021</li>
-            <li>Graduated with Second Class Honors Upper Division - Gretsa University, 2024</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-row">
-            <div class="project-card">
-                <h3>Bidding Bot (Chrome Web Store)</h3>
-                <p>Successfully built and published a bidding bot on the Chrome Web Store, enabling automated bidding processes for users.</p>
-                <p><strong>Skills:</strong> JavaScript, Chrome Extensions, Automation, API Integration</p>
-               
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2>Featured Work</h2>
+                <div class="section-line"></div>
             </div>
-            <div class="project-card">
-                <h3>Freelancing Platform</h3>
-                <p>Designed and developed a successful freelancing platform, connecting clients with freelancers for various services.</p>
-                <p><strong>Skills:</strong> Web Development, Databases, User Interface Design, Project Management</p>
-             
-            </div>
-            <div class="project-card">
-                <h3>Computing Research Project I</h3>
-                <p>Conducted in-depth research and development, achieving a grade of 81% (A).</p>
-                <p><strong>Skills:</strong> Research, Programming, Problem Solving</p>
-            
-            </div>
-            <div class="project-card">
-                <h3>Computing Research Project II</h3>
-                <p>Advanced project work applying theoretical knowledge, earning a grade of 69% (B).</p>
-                <p><strong>Skills:</strong> Project Management, Analysis, Development</p>
-                
-            </div>
-            <div class="project-card">
-                <h3>Industrial Attachment</h3>
-                <p>Gained practical experience in a professional setting, focusing on networking and systems, graded at 72% (A).</p>
-                <p><strong>Skills:</strong> Networking, Operating Systems, Collaboration</p>
-                
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-chrome"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon-large">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Chrome API</span>
+                            <span>Automation</span>
+                        </div>
+                        <h3>Bidding Bot</h3>
+                        <p>Published Chrome extension enabling automated bidding processes. Built with modern JavaScript and Chrome Extension APIs for seamless user experience.</p>
+                        <div class="project-footer">
+                            <span class="project-status"><i class="fas fa-circle"></i> Live on Chrome Web Store</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon-large">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Full Stack</span>
+                            <span>Database</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <h3>Freelancing Platform</h3>
+                        <p>Comprehensive platform connecting clients with freelancers. Features include user authentication, job posting, and payment integration.</p>
+                        <div class="project-footer">
+                            <span class="project-status"><i class="fas fa-circle"></i> Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-file-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon-large">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>Analysis</span>
+                        </div>
+                        <h3>Research Project I</h3>
+                        <p>In-depth computing research and development project achieving a distinguished grade of 81% (A).</p>
+                        <div class="project-footer">
+                            <span class="project-grade"><i class="fas fa-star"></i> Grade: A (81%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-file-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon-large">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Development</span>
+                            <span>Management</span>
+                        </div>
+                        <h3>Research Project II</h3>
+                        <p>Advanced project applying theoretical knowledge to practical scenarios with comprehensive documentation.</p>
+                        <div class="project-footer">
+                            <span class="project-grade"><i class="fas fa-star"></i> Grade: B (69%)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="cta">
-        <p>Ready to innovate? Contact me at <a href="mailto:cephasmutisya02@gmail.com">cephasmutisya02@gmail.com</a> or <a href="tel:+254707188251">+254 707 188 251</a> to discuss how I can contribute to your next technology project!</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2>Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to build something amazing?</h3>
+                    <p>I'm currently open to new opportunities and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:cephasmutisya02@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">cephasmutisya02@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+254707188251" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+254 707 188 251</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta glass-card">
+                    <div class="cta-content">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Send me a message</h3>
+                        <p>I respond immediately</p>
+                        <a href="mailto:cephasmutisya02@gmail.com" class="btn btn-primary btn-large">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Cephas Nyamai Mutisya | All Rights Reserved</p>
-        <p id="last-updated">Last Updated: </p>
-               <div class="back-to-top">Back to Top</div>
-        <div class="wave"></div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-bracket">&lt;</span>CM<span class="brand-bracket">/&gt;</span>
+                <p>Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:cephasmutisya02@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+254707188251" class="social-icon"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cephas Nyamai Mutisya. All rights reserved.</p>
+            <p class="footer-note">Designed & Built with <i class="fas fa-heart"></i></p>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
